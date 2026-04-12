@@ -19,3 +19,9 @@ always @(posedge clk) - Run this block only on rising clock edge
 $dumpfile / $dumpvars - record all signals to a .vcd waveform file
 
 zero - is a flag, if output result is (0000) then it shows 1; else 0.
+
+= (blocking) — executes instantly, line by line, like normal code.
+
+<= (non-blocking) — all assignments are scheduled and happen simultaneously at the clock edge.
+
+Q <= 1'b0;   // set Q to 0 at the clock edge
