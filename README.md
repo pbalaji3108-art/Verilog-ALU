@@ -1,5 +1,9 @@
 Project: 4-bit ALU  |  Language: Verilog  |  Tool: EDA Playground (Icarus Verilog 12.0)
 
+Keywords need to know / used in this project
+
+(Check branches for specific programs)
+
 Reg - Holds a value
 
 Wire - used for outputs to just observe
