@@ -1,11 +1,20 @@
-Project: 4-bit ALU  |  Language: Verilog  |  Tool: EDA Playground (Icarus Verilog 12.0)
+Verilog Operands
 
-Reg - Holds a value
+In module
 
-Wire - used for outputs to just observe
+    3'b000: result = A + B;
 
-always @(*) - Run this block whenever ANY input signal changes (combinational)
+In testbench
 
-always @(posedge clk) - Run this block only on rising clock edge
+    A = 4'b0011; B = 4'b0101; op = 3'b000; #10;
 
-$dumpfile / $dumpvars - record all signals to a .vcd waveform file
+    $display("ADD: %b + %b = %b | zero=%b", A, B, result, zero);
+
+
+1. 000 -> ADD (A+B)
+2. 001 -> SUB (A-B)
+3. 010 -> AND (A&B)
+4. 011 -> OR (A|B)
+5. 100 -> XOR (A^B)
+6. 101 -> LEFT SHIFT (A<<1)
+7. 110 -> RIGHT SHIFT (A>>1)
