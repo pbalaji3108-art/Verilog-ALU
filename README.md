@@ -13,3 +13,5 @@ always @(*) - Run this block whenever ANY input signal changes (combinational)
 always @(posedge clk) - Run this block only on rising clock edge
 
 $dumpfile / $dumpvars - record all signals to a .vcd waveform file
+
+zero - is a flag, if output result is (0000) then it shows 1; else 0.
