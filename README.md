@@ -2,6 +2,10 @@ Project: 4-bit ALU  |  Language: Verilog  |  Tool: EDA Playground (Icarus Verilo
 
 Keywords need to know / used in this project
 
+Module - what the hardware does.
+
+Testbench - proof that it does it correectly
+
 (Check branches for specific programs)
 
 Reg - Holds a value
