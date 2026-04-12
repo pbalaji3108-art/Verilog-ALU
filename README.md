@@ -1,4 +1,4 @@
-Verilog Operands
+Verilog Operands / combinational logic
 
 In module
 
